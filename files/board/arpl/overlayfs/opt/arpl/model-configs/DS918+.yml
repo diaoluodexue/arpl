@@ -95,3 +95,24 @@ builds:
       - "ramdisk-common-etc-rc.patch"
       - "ramdisk-42951-post-init-script.patch"
       - "ramdisk-42661-disable-disabled-ports.patch"
+
+69057:
+    ver: "7.2.1"
+    kver: "4.4.180"
+    rd-compressed: false
+    cmdline:
+      <<: *cmdline
+    synoinfo:
+      <<: *synoinfo
+    pat:
+      url: "https://cndl.synology.cn/download/DSM/criticalupdate/update_pack/69057-3/synology_apollolake_918%2B.pat"
+      hash: "c1ffb1b48301fbcf1ccffae00062e95c8b5b18d50a70c3fbb79ea12a38a39bb7"
+      ramdisk-hash: "6ac446bddba53b1c215e0abbf05236371e5e3b91ab0c4c193a0999cc8b8a857b"
+      zimage-hash: "12afcd27e15ba5e4596e1af7275d9462d31c7d8afb32aa723f7b8b7cfa5a19a2"
+      md5-hash: "74c067cf1363b9b70522b145b59e1626"
+    patch:
+      - "ramdisk-common-disable-root-pwd.patch"
+      - "ramdisk-common-init-script.patch"
+      - "ramdisk-common-etc-rc.patch"
+      - "ramdisk-42951-post-init-script.patch"
+      - "ramdisk-42661-disable-disabled-ports.patch"
